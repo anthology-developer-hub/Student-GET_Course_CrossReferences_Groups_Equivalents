@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "42a2f1b6-3c4c-42d8-93be-5ef80c047779",
+		"name": "GET_Course_CrossReferences_Groups_Equivalents",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25479697",
+		"_collection_link": "https://gold-moon-293474.postman.co/workspace/Riyaz-Workplace~75cc7567-b0d3-445a-8521-2bb89813febc/collection/25479697-42a2f1b6-3c4c-42d8-93be-5ef80c047779?action=share&source=collection_link&creator=25479697"
+	},
+	"item": [
+		{
+			"name": "CourseCrossReferences",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{domain}}/ds/campusnexus/CourseCourseCrossReferences",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"CourseCourseCrossReferences"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CourseCrossReferences by Id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{domain}}/ds/campusnexus/CourseCourseCrossReferences(1)",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"CourseCourseCrossReferences(1)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrossReferenceGroups",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{domain}}/ds/campusnexus/CourseCrossReferenceGroups",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"CourseCrossReferenceGroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrossReferenceGroups by Id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{domain}}/ds/campusnexus/CourseCrossReferenceGroups(27)",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"CourseCrossReferenceGroups(27)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CourseEquivalents",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{domain}}/ds/campusnexus/CourseEquivalents",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"CourseEquivalents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CourseEquivalents by Id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{domain}}/ds/campusnexus/CourseEquivalents(22)",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"ds",
+						"campusnexus",
+						"CourseEquivalents(22)"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "$domain",
+			"type": "string"
+		},
+		{
+			"key": "username",
+			"value": "$username",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "$password",
+			"type": "string"
+		}
+	]
+}
